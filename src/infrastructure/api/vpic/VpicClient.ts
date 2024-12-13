@@ -7,7 +7,7 @@ interface VpicResponse<T> {
 }
 
 export class VpicClient {
-  private baseUrl = 'https://vpic.nhtsa.dot.gov/api/vehicles';
+  private baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
   async getMakesForVehicleType(
     vehicleType: string

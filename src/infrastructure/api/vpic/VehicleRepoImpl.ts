@@ -21,8 +21,8 @@ export class VehicleRepoImpl implements VehicleRepo {
   ): Promise<Model[]> {
     const data = await this.vpicClient.getModelsForMakeIdYear(makeId, year);
     return data.Results.map((item) => ({
-      MakeId: item.MakeId,
-      MakeName: item.MakeName,
+      Make_ID: item.Make_ID,
+      Make_Name: item.Make_Name,
       Model_ID: item.Model_ID,
       Model_Name: item.Model_Name,
     }));

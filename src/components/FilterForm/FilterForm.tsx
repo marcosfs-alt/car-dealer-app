@@ -27,9 +27,9 @@ export function FilterForm({
   const isButtonDisabled = !selectedMakeId || !selectedYear;
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 flex flex-col items-center justify-center">
       <Dropdown
-        label="Select Make"
+        label="Select Manufacturer"
         options={makes.map((make) => ({
           label: make.MakeName,
           value: make.MakeId.toString(),

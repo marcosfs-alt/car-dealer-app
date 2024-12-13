@@ -13,9 +13,8 @@ export default async function HomePage() {
 
   const currentYear = new Date().getFullYear();
   const years = Array.from({ length: currentYear - 2014 }, (_, i) => 2015 + i);
-  console.log(makes);
   return (
-    <div className="p-4">
+    <div className="p-4 flex flex-col items-center justify-center">
       <h1 className="text-2xl font-bold mb-4">Filter Vehicles</h1>
       <Suspense fallback={<div>Loading filters...</div>}>
         <FilterForm makes={makes} years={years} />

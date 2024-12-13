@@ -17,7 +17,7 @@ export function Dropdown({ label, options, onChange }: DropdownProps) {
   };
 
   return (
-    <div className="flex flex-col space-y-2">
+    <div className="flex flex-col space-y-2 w-[240px]">
       <label className="font-medium">{label}</label>
       <select
         onChange={handleChange}
